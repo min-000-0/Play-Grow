@@ -1,4 +1,45 @@
+//logo
 .navbar-brand img {
   height: 48px;
   width: auto;
+}
+
+//nav-link
+@include media-breakpoint-down(lg) {
+  .navbar-nav {
+    .nav-item {
+      border-radius: 8px;
+
+      &.active {
+        background-color: $secondary-200;
+      }
+    }
+    .nav-link::after {
+      content: "";
+    }
+  }
+}
+
+.navbar-nav .nav-link {
+  display: flex;
+  gap: 8px;
+}
+
+.navbar-nav .nav-link::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url(/assets/images/icon.png) center / cover no-repeat;
+}
+
+//navbar-toggler
+.navbar-toggler {
+  border: none;
+  padding: 12px;
+}
+
+.navbar-toggler-icon {
+  width: 24px;
+  height: 24px;
 }
