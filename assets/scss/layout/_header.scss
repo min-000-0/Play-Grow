@@ -4,25 +4,19 @@
   width: auto;
 }
 
-//nav-link
-@include media-breakpoint-down(lg) {
-  .navbar-nav {
-    .nav-item {
-      border-radius: 8px;
-
-      &.active {
-        background-color: $secondary-200;
-      }
-    }
-    .nav-link::after {
-      content: "";
-    }
-  }
-}
-
+// nav-link
 .navbar-nav .nav-link {
   display: flex;
   gap: 8px;
+  border-radius: 8px;
+
+  &:hover {
+    background-color: $secondary-200;
+  }
+
+  &:active {
+    color: $primary-600;
+  }
 }
 
 .navbar-nav .nav-link::before {

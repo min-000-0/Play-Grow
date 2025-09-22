@@ -1,0 +1,11 @@
+$utilities: map-merge(
+  $utilities,
+  (
+    "text-gray": (
+      property: color,
+      class: text-gray,
+      responsive: true,
+      values: $grays,
+    ),
+  )
+);

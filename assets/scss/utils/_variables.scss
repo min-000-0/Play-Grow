@@ -446,7 +446,8 @@ $enable-grid-classes: true !default;
 $enable-container-classes: true !default;
 $enable-cssgrid: false !default;
 $enable-button-pointers: true !default;
-$enable-rfs: true !default;
+$enable-rfs: false !default; //custom
+// $enable-rfs: true !default;
 $enable-validation-icons: true !default;
 $enable-negative-margins: false !default;
 $enable-deprecation-messages: true !default;
@@ -592,7 +593,7 @@ $container-max-widths: (
   xl: 1140px,
   xxl: 1296px,
   //custom
-  // xxl: 1320px,,,,,,,,,
+  // xxl: 1320px,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ) !default;
 // scss-docs-end container-max-widths
 
@@ -617,6 +618,8 @@ $container-padding-x: $grid-gutter-width !default;
 // scss-docs-start border-variables
 $border-width: 1px !default;
 $border-widths: (
+  0: 0,
+  //custom
   1: 1px,
   2: 2px,
   3: 3px,
@@ -629,7 +632,8 @@ $border-color-translucent: rgba($black, 0.175) !default;
 // scss-docs-end border-variables
 
 // scss-docs-start border-radius-variables
-$border-radius: 0.375rem !default;
+$border-radius: 16px !default; //custom
+// $border-radius: 0.375rem !default;
 $border-radius-sm: 0.25rem !default;
 $border-radius-lg: 0.5rem !default;
 $border-radius-xl: 1rem !default;
@@ -701,6 +705,7 @@ $font-family-code: var(--#{$prefix}font-monospace) !default;
 // $font-size-base affects the font size of the body text
 $font-size-root: null !default;
 $font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+$font-size-xs: $font-size-base * 0.75; //custombbbb
 $font-size-sm: $font-size-base * 0.875 !default;
 $font-size-lg: $font-size-base * 1.25 !default;
 
@@ -719,11 +724,16 @@ $line-height-sm: 1.25 !default;
 $line-height-lg: 2 !default;
 
 $h1-font-size: $font-size-base * 2.5 !default;
-$h2-font-size: $font-size-base * 2 !default;
-$h3-font-size: $font-size-base * 1.75 !default;
-$h4-font-size: $font-size-base * 1.5 !default;
-$h5-font-size: $font-size-base * 1.25 !default;
-$h6-font-size: $font-size-base !default;
+$h2-font-size: $font-size-base * 2.375 !default; //custom
+// $h2-font-size: $font-size-base * 2 !default;
+$h3-font-size: $font-size-base * 2 !default; //custom
+// $h3-font-size: $font-size-base * 1.75 !default;
+$h4-font-size: $font-size-base * 1.75 !default; //custom
+// $h4-font-size: $font-size-base * 1.5 !default;
+$h5-font-size: $font-size-base * 1.5 !default; //custom
+// $h5-font-size: $font-size-base * 1.25 !default;
+$h6-font-size: $font-size-base * 1.25 !default; //custom
+// $h6-font-size: $font-size-base !default;
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
@@ -748,12 +758,8 @@ $headings-color: inherit !default;
 
 // scss-docs-start display-headings
 $display-font-sizes: (
-  1: 5rem,
-  2: 4.5rem,
-  3: 4rem,
-  4: 3.5rem,
-  5: 3rem,
-  6: 2.5rem,
+  1: 4rem,
+  2: 3rem,
 ) !default;
 
 $display-font-family: null !default;

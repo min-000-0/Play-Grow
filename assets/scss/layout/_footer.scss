@@ -1,4 +1,21 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+//logo
+.footer img {
+  height: 48px;
+  width: auto;
+}
+
+.footer {
+  a.p-4 {
+    color: $gray-900;
+    display: flex;
+    gap: 8px;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      background: url(/assets/images/icon.png) center / cover no-repeat;
+    }
+  }
 }
