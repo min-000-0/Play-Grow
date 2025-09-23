@@ -8,7 +8,7 @@
     <%- include('./layout/header'); -%>
 
     <!-- hero -->
-    <section class="hero-section">
+    <section class="hero-section overflow-hidden position-relative">
       <div class="container">
         <!-- content -->
         <div class="text-center text-lg-start">
@@ -40,11 +40,24 @@
           >
         </div>
         <!-- pic -->
+        <!-- people -->
         <div class="row justify-content-lg-end">
-          <div class="col-lg-9 px-sm-3 px-0">
-            <img src="/assets/images/hero.png" alt="" class="hero-png" />
+          <div class="col-lg-9 me-lg-n13 px-sm-3 px-0">
+            <picture>
+              <source
+                media="(max-width: 992px)"
+                srcset="/assets/images/hero-sm.png"
+              />
+              <img src="/assets/images/hero.png" alt="" class="hero-png" />
+            </picture>
           </div>
         </div>
+        <!-- info -->
+        <img
+          src="/assets/images/hero-info.png"
+          alt=""
+          class="d-none d-md-block hero-info"
+        />
       </div>
     </section>
 

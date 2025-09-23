@@ -13,14 +13,18 @@
   font-size: 0;
   line-height: 0;
 }
-// @include media-breakpoint-down(sm) {
-//   .hero-png {
-//     margin-left: -12px;
-//     margin-right: -12px;
-//   }
-// }
+
 @include media-breakpoint-up(lg) {
   .hero-png {
     margin-top: -276px;
   }
+}
+
+.hero-info {
+  width: 322px;
+  height: 284px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
 }
