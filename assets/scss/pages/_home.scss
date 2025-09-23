@@ -1,3 +1,21 @@
-.index-title {
-  font-size: 100px;
+.hero-section {
+  background: url(/assets/images/hero-bg.png) bottom / contain no-repeat;
+}
+
+@include media-breakpoint-down(sm) {
+  .hero-section {
+    background: url(/assets/images/hero-bg.png) bottom / cover no-repeat;
+    background-size: 1000px auto;
+  }
+}
+
+.hero-title {
+  font-size: 0;
+  line-height: 0;
+}
+
+@include media-breakpoint-up(lg) {
+  .hero-png {
+    margin-top: -276px;
+  }
 }

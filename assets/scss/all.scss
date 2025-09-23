@@ -16,6 +16,7 @@
 @import "./utils/font-size";
 @import "./utils/font-color";
 @import "./utils/border";
+@import "./utils/width";
 
 @import "./utils/variables";
 
@@ -55,6 +56,9 @@
 @import "../../node_modules/bootstrap/scss/spinners";
 @import "../../node_modules/bootstrap/scss/offcanvas";
 @import "../../node_modules/bootstrap/scss/placeholders";
+
+// 6.5. 加入這行來啟用響應式標題
+@import "../../node_modules/bootstrap/scss/helpers";
 
 // 7. 最後載入 utilities API
 @import "../../node_modules/bootstrap/scss/utilities/api";

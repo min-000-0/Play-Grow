@@ -8,9 +8,46 @@
     <%- include('./layout/header'); -%>
 
     <!-- hero -->
-    <div>
-      <img src="/assets/images/hero.png" alt="" style="max-width: 100%" />
-    </div>
+    <section class="hero-section">
+      <div class="container">
+        <!-- content -->
+        <div class="text-center text-lg-start">
+          <!-- title -->
+          <h1 class="hero-title d-flex flex-column pt-16 pt-lg-32 mb-6">
+            <picture class="mb-2 mb-lg-4">
+              <source
+                media="(min-width: 992px)"
+                srcset="/assets/images/hero-title1.svg"
+              />
+              <img src="/assets/images/hero-title1-sm.svg" alt="" />
+            </picture>
+            <picture>
+              <source
+                media="(min-width: 992px)"
+                srcset="/assets/images/hero-title2.svg"
+              />
+              <img src="/assets/images/hero-title2-sm.svg" alt="" />
+            </picture>
+          </h1>
+          <!-- text -->
+          <div class="text-gray-600 mb-6">
+            <p class="fs-lg-5 pb-2 pb-lg-4">精選美國親子權威品牌Montessori</p>
+            <p class="fs-lg-5">打造孩子快樂學習の日常</p>
+          </div>
+          <!-- btn -->
+          <a href="#" class="btn btn-primary-600 text-white w-50 w-lg-25"
+            >探索更多</a
+          >
+        </div>
+        <!-- pic -->
+        <div class="row justify-content-end">
+          <div class="col-lg-9">
+            <img src="/assets/images/hero.png" alt="" class="hero-png" />
+          </div>
+        </div>
+      </div>
+    </section>
+
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>

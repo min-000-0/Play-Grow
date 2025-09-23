@@ -32,7 +32,7 @@ $utilities: map-merge(
       ),
     ),
     "border-start": (
-      property: border-start,
+      property: border-left,
       class: border-start,
       responsive: true,
       values: (
@@ -47,7 +47,7 @@ $utilities: map-merge(
       ),
     ),
     "border-end": (
-      property: border-end,
+      property: border-right,
       class: border-end,
       responsive: true,
       values: (
