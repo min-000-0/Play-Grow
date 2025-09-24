@@ -1,3 +1,4 @@
+// hero
 .hero-section {
   background: url(/assets/images/hero-bg.png) bottom / contain no-repeat;
 }
@@ -7,11 +8,6 @@
     background: url(/assets/images/hero-bg.png) bottom / cover no-repeat;
     background-size: 1000px auto;
   }
-}
-
-.hero-title {
-  font-size: 0;
-  line-height: 0;
 }
 
 @include media-breakpoint-up(lg) {
@@ -27,4 +23,68 @@
   top: 50%;
   right: 0;
   transform: translate(50%, -50%);
+}
+
+// 超級品牌月
+.product-card {
+  &__badge {
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    padding: 8px 12px;
+  }
+
+  &__favBtn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 50px;
+    color: $primary-600;
+    background-color: white;
+
+    .fi {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  --swiper-navigation-size: 48px;
+  --swiper-theme-color: #{$primary-600};
+  svg {
+    display: none;
+  }
+
+  .fi {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.swiper-button-prev {
+  top: -84px !important;
+  left: auto !important;
+  right: 64px !important;
+}
+.swiper-button-next {
+  top: -84px !important;
+  right: 0 !important;
+}
+
+.swiper-pagination {
+  --swiper-pagination-bullet-horizontal-gap: 8px;
+  --swiper-theme-color: #{$primary-600};
+  bottom: -32px !important;
+
+  @include media-breakpoint-up(lg) {
+    bottom: -60px !important;
+  }
 }

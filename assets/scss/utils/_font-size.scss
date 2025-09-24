@@ -1,3 +1,4 @@
+// fs-xs.sm.lg
 $utilities: map-merge(
   $utilities,
   (
@@ -11,7 +12,27 @@ $utilities: map-merge(
           (
             "xs": $font-size-base * 0.75,
             "sm": $font-size-base * 0.875,
+            "md": $font-size-base,
             "lg": $font-size-base * 1.25,
+          )
+        ),
+    ),
+  )
+);
+
+// lh-0
+$utilities: map-merge(
+  $utilities,
+  (
+    "line-height": (
+      responsive: true,
+      property: line-height,
+      class: lh,
+      values:
+        map-merge(
+          map-get(map-get($utilities, "line-height"), "values"),
+          (
+            0: 0,
           )
         ),
     ),

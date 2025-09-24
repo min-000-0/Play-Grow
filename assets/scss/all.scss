@@ -17,6 +17,7 @@
 @import "./utils/font-color";
 @import "./utils/border";
 @import "./utils/width";
+@import "./utils/ratio";
 
 @import "./utils/variables";
 
@@ -65,6 +66,7 @@
 
 // reset、base
 @import "./base/base";
+@import "./base/button";
 
 // helper
 @import "./helper/icon";
