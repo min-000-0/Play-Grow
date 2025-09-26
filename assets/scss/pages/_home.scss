@@ -20,9 +20,8 @@
   width: 322px;
   height: 284px;
   position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translate(50%, -50%);
+  top: 30%;
+  right: -234px;
 }
 
 // 超級品牌月
@@ -107,19 +106,21 @@
   }
 }
 
-.product-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(0, -60%);
-  z-index: 2;
-}
+@include media-breakpoint-up(lg) {
+  .product-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(0, -50%);
+    z-index: 2;
+  }
 
-.product-content2 {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 50vw;
-  transform: translate(0, -60%);
-  z-index: 2;
+  .product-content2 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 50vw;
+    transform: translate(0, -50%);
+    z-index: 2;
+  }
 }

@@ -8,8 +8,8 @@
     <%- include('./layout/header'); -%>
 
     <!-- hero -->
-    <section class="hero-section overflow-hidden position-relative">
-      <div class="container">
+    <section class="hero-section overflow-hidden">
+      <div class="container position-relative">
         <!-- content -->
         <div class="text-center text-lg-start">
           <!-- title -->
@@ -17,16 +17,19 @@
             <picture class="mb-2 mb-lg-4">
               <source
                 media="(min-width: 992px)"
-                srcset="/assets/images/hero-title1.svg"
+                srcset="/assets/images/home/hero/hero-title1.svg"
               />
-              <img src="/assets/images/hero-title1-sm.svg" alt="" />
+              <img
+                src="/assets/images/home/hero/home/hero/hero-title1-sm.svg"
+                alt=""
+              />
             </picture>
             <picture>
               <source
                 media="(min-width: 992px)"
-                srcset="/assets/images/hero-title2.svg"
+                srcset="/assets/images/home/hero/hero-title2.svg"
               />
-              <img src="/assets/images/hero-title2-sm.svg" alt="" />
+              <img src="/assets/images/home/hero/hero-title2-sm.svg" alt="" />
             </picture>
           </h1>
           <!-- text -->
@@ -44,17 +47,21 @@
             <picture>
               <source
                 media="(max-width: 992px)"
-                srcset="/assets/images/hero-sm.png"
+                srcset="/assets/images/home/hero/hero-sm.png"
               />
-              <img src="/assets/images/hero.png" alt="" class="hero-png" />
+              <img
+                src="/assets/images/home/hero/hero.png"
+                alt=""
+                class="hero-png"
+              />
             </picture>
           </div>
         </div>
         <!-- info -->
         <img
-          src="/assets/images/hero-info.png"
+          src="/assets/images/home/hero/hero-info.png"
           alt=""
-          class="d-none d-md-block hero-info"
+          class="d-none d-xxl-block hero-info"
         />
       </div>
     </section>
@@ -67,9 +74,12 @@
           <picture class="mb-2 mb-lg-4">
             <source
               media="(min-width: 992px)"
-              srcset="/assets/images/title1.svg"
+              srcset="/assets/images/home/section1/title1.svg"
             />
-            <img src="/assets/images/title1-sm.svg" alt="" />
+            <img
+              src="/assets/images/home/section1/section1/title1-sm.svg"
+              alt=""
+            />
           </picture>
         </h2>
         <!-- cards -->
@@ -83,7 +93,7 @@
                 >
                   <div class="ratio ratio-19x20 mb-4">
                     <img
-                      src="/assets/images/image.png"
+                      src="/assets/images/home/section1/image1.png"
                       alt="感官教具積木組"
                       class="rounded object-fit-cover"
                     />
@@ -114,7 +124,7 @@
                 >
                   <div class="ratio ratio-19x20 mb-4">
                     <img
-                      src="/assets/images/image2.png"
+                      src="/assets/images/home/section1/image2.png"
                       alt="感官教具積木組"
                       class="rounded object-fit-cover"
                     />
@@ -145,7 +155,7 @@
                 >
                   <div class="ratio ratio-19x20 mb-4">
                     <img
-                      src="/assets/images/image3.png"
+                      src="/assets/images/home/section1/image3.png"
                       alt="感官教具積木組"
                       class="rounded object-fit-cover"
                     />
@@ -176,7 +186,7 @@
                 >
                   <div class="ratio ratio-19x20 mb-4">
                     <img
-                      src="/assets/images/image4.png"
+                      src="/assets/images/home/section1/image4.png"
                       alt="感官教具積木組"
                       class="rounded object-fit-cover"
                     />
@@ -207,7 +217,7 @@
                 >
                   <div class="ratio ratio-19x20 mb-4">
                     <img
-                      src="/assets/images/image5.png"
+                      src="/assets/images/home/section1/image5.png"
                       alt="感官教具積木組"
                       class="rounded object-fit-cover"
                     />
@@ -238,7 +248,7 @@
                 >
                   <div class="ratio ratio-19x20 mb-4">
                     <img
-                      src="/assets/images/image7.png"
+                      src="/assets/images/home/section2/image2.png"
                       alt="感官教具積木組"
                       class="rounded object-fit-cover"
                     />
@@ -283,55 +293,73 @@
     </section>
 
     <!-- 商品系列 -->
-    <section class="bg-secondary-100 py-25">
+    <section class="bg-secondary-100 py-lg-25 py-10">
       <!-- 01 -->
-      <div class="container-fluid position-relative overflow-hidden mb-42">
+      <div
+        class="container-fluid position-relative overflow-hidden mb-lg-42 mb-20"
+      >
         <!-- pic -->
         <div class="container">
           <div class="col-lg-7">
             <img
-              src="/assets/images/image9.png"
+              src="/assets/images/home/section2/image1.png"
               alt=""
-              class="border border-white border-4 mb-4 mb-lg-0"
+              class="border border-white border-4 mb-4 mb-lg-0 rounded-4"
             />
             <ul class="d-flex pic-inline">
               <li>
                 <a href="#">
-                  <img src="/assets/images/image7.png" alt="" />
+                  <img src="/assets/images/home/section2/image2.png" alt="" />
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="/assets/images/image6.png" alt="" />
+                  <img src="/assets/images/home/section2/image3.png" alt="" />
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="/assets/images/image8.png" alt="" />
+                  <img src="/assets/images/home/section2/image4.png" alt="" />
                 </a>
               </li>
             </ul>
           </div>
         </div>
         <!-- card-->
-        <div class="product-content bg-white p-12">
-          <h2 class="fs-0 lh-0 text-center text-lg-start mb-6">
-            <picture class="mb-2 mb-lg-4">
-              <source
-                media="(min-width: 992px)"
-                srcset="/assets/images/title2.svg"
-              />
-              <img src="/assets/images/title2-sm.svg" alt="" />
-            </picture>
-          </h2>
-          <h5 class="text-primary fw-bold fw-lg-normal mb-4">創意遊戲時光</h5>
-          <p class="fs-sm fs-lg-md text-gray-600 mb-6">
-            孩子倒出一盒五彩積木，眼睛閃閃發亮。磁性吸附的聲音，像是靈感的碰撞
-            。一塊塊拼出城堡、動物、太空船，世界在小手中展開。你在旁陪伴，一起笑、一起想，學習從玩樂中自然萌芽。
-          </p>
-          <button type="button" class="btn btn-primary btn-primary">
-            探索更多
-          </button>
+        <div class="container">
+          <div
+            class="product-content text-center text-lg-start d-flex bg-white p-12 mt-6 mt-lg-0"
+          >
+            <!-- content -->
+            <div>
+              <h2 class="fs-0 lh-0 mb-6">
+                <picture class="mb-2 mb-lg-4">
+                  <source
+                    media="(min-width: 992px)"
+                    srcset="/assets/images/home/section2/title1.svg"
+                  />
+                  <img
+                    src="/assets/images/home/section2/title1-sm.svg"
+                    alt=""
+                  />
+                </picture>
+              </h2>
+              <h5 class="text-primary fw-bold fw-lg-normal mb-4">
+                創意遊戲時光
+              </h5>
+              <p class="fs-sm fs-lg-md text-gray-600 mb-6">
+                孩子倒出一盒五彩積木，眼睛閃閃發亮。磁性吸附的聲音，像是靈感的碰撞
+                。一塊塊拼出城堡、動物、太空船，世界在小手中展開。你在旁陪伴，一起笑、一起想，學習從玩樂中自然萌芽。
+              </p>
+              <button type="button" class="btn btn-primary btn-primary w-75">
+                探索更多
+              </button>
+            </div>
+            <!-- art -->
+            <div class="d-none d-xxl-block ms-28 mt-5 me-5 flex-shrink-0">
+              <img src="/assets/images/home/section2/bg2.svg" alt="" />
+            </div>
+          </div>
         </div>
       </div>
       <!-- 02 -->
@@ -340,48 +368,64 @@
         <div class="container d-flex flex-row-reverse">
           <div class="col-lg-7 d-flex flex-column align-items-end">
             <img
-              src="/assets/images/image9.png"
+              src="/assets/images/home/section2/image5.jpg"
               alt=""
-              class="border border-white border-4 mb-4 mb-lg-0"
+              class="border border-white border-4 mb-4 mb-lg-0 rounded-4"
             />
-            <ul class="d-flex pic-inline me-lg-n32">
+            <ul class="d-flex pic-inline me-md-n32">
               <li>
-                <a href="#">
-                  <img src="/assets/images/image7.png" alt="" />
+                <a href="#" class="h-100">
+                  <img src="/assets/images/home/section2/image6.jpg" alt="" />
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="/assets/images/image6.png" alt="" />
+                  <img src="/assets/images/home/section2/image7.jpg" alt="" />
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="/assets/images/image8.png" alt="" />
+                  <img src="/assets/images/home/section2/image8.jpg" alt="" />
                 </a>
               </li>
             </ul>
           </div>
         </div>
         <!-- card-->
-        <div class="product-content2 bg-white p-12">
-          <h2 class="fs-0 lh-0 text-center text-lg-start mb-6">
-            <picture class="mb-2 mb-lg-4">
-              <source
-                media="(min-width: 992px)"
-                srcset="/assets/images/title2.svg"
-              />
-              <img src="/assets/images/title2-sm.svg" alt="" />
-            </picture>
-          </h2>
-          <h5 class="text-primary fw-bold fw-lg-normal mb-4">創意遊戲時光</h5>
-          <p class="fs-sm fs-lg-md text-gray-600 mb-6">
-            孩子倒出一盒五彩積木，眼睛閃閃發亮。磁性吸附的聲音，像是靈感的碰撞
-            。一塊塊拼出城堡、動物、太空船，世界在小手中展開。你在旁陪伴，一起笑、一起想，學習從玩樂中自然萌芽。
-          </p>
-          <button type="button" class="btn btn-primary btn-primary">
-            探索更多
-          </button>
+        <div class="container">
+          <div
+            class="product-content2 text-center text-lg-start bg-white d-flex p-12 mt-6 mt-lg-0"
+          >
+            <!-- art -->
+            <div class="d-none d-xxl-block mt-5 me-18 flex-shrink-0">
+              <img src="/assets/images/home/section2/bg3.svg" alt="" />
+            </div>
+            <!-- content -->
+            <div>
+              <h2 class="fs-0 lh-0 text-center text-lg-start mb-6">
+                <picture class="mb-2 mb-lg-4">
+                  <source
+                    media="(min-width: 992px)"
+                    srcset="/assets/images/home/section2/title2.svg"
+                  />
+                  <img
+                    src="/assets/images/home/section2/title2-sm.svg"
+                    alt=""
+                  />
+                </picture>
+              </h2>
+              <h5 class="text-primary fw-bold fw-lg-normal mb-4">
+                創意遊戲時光
+              </h5>
+              <p class="fs-sm fs-lg-md text-gray-600 mb-6">
+                孩子倒出一盒五彩積木，眼睛閃閃發亮。磁性吸附的聲音，像是靈感的碰撞
+                。一塊塊拼出城堡、動物、太空船，世界在小手中展開。你在旁陪伴，一起笑、一起想，學習從玩樂中自然萌芽。
+              </p>
+              <button type="button" class="btn btn-primary btn-primary w-75">
+                探索更多
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
