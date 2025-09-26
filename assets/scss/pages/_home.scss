@@ -78,7 +78,8 @@
   right: 0 !important;
 }
 
-.swiper-pagination {
+.swiper-pagination,
+.swiper2-pagination {
   --swiper-pagination-bullet-horizontal-gap: 8px;
   --swiper-theme-color: #{$primary-600};
   bottom: -32px !important;
@@ -123,4 +124,18 @@
     transform: translate(0, -50%);
     z-index: 2;
   }
+}
+
+// 親子學
+.swiper2 {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper2 .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  height: calc((100% - 30px) / 2) !important;
 }
