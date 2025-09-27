@@ -45,16 +45,15 @@ const swiper2 = new Swiper(".swiper2", {
   pagination: {
     el: ".swiper2-pagination",
   },
+  slidesPerView: 1,
+  spaceBetween: 24,
   breakpoints: {
     767: {
       slidesPerView: 2,
       grid: {
         rows: 2,
+        fill: "row",
       },
-    },
-    0: {
-      slidesPerView: 1,
-      spaceBetween: 24,
     },
   },
 });

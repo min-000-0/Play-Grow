@@ -1,11 +1,13 @@
 // hero
 .hero-section {
-  background: url(/assets/images/hero-bg.png) bottom / contain no-repeat;
+  background: url(/assets/images/home/hero/hero-bg.png) bottom / contain
+    no-repeat;
 }
 
 @include media-breakpoint-down(sm) {
   .hero-section {
-    background: url(/assets/images/hero-bg.png) bottom / cover no-repeat;
+    background: url(/assets/images/home/hero/hero-bg.png) bottom / cover
+      no-repeat;
     background-size: 1000px auto;
   }
 }
@@ -132,4 +134,33 @@
   height: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.card-bg-pink,
+.card-bg-pink-lg-yellow {
+  background-image: url(/assets/images/home/section3/bg-pink-sm.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.card-bg-yellow,
+.card-bg-yellow-lg-pink {
+  background-image: url(/assets/images/home/section3/bg-yellow-sm.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@include media-breakpoint-up(lg) {
+  .card-bg-pink,
+  .card-bg-yellow-lg-pink {
+    background-image: url(/assets/images/home/section3/bg-pink.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .card-bg-yellow,
+  .card-bg-pink-lg-yellow {
+    background-image: url(/assets/images/home/section3/bg-yellow.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
