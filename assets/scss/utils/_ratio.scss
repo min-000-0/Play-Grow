@@ -2,6 +2,6 @@ $aspect-ratios: map-merge(
   $aspect-ratios,
   (
     "19x20": calc(20 / 19 * 100%),
-    "75x60": calc(60 / 19 * 100%),
+    "75x60": calc(60 / 75 * 100%),
   )
 );

@@ -294,11 +294,15 @@
         <!-- pic -->
         <div class="container">
           <div class="col-lg-7">
-            <img
-              src="/assets/images/home/section2/image1.png"
-              alt=""
-              class="ratio ratio-75x60 border border-white border-4 mb-4 mb-lg-0 rounded-4"
-            />
+            <div
+              class="product-pic ratio ratio-75x60 mb-4 mb-lg-0 border border-white border-4 rounded-4 overflow-hidden"
+            >
+              <img
+                src="/assets/images/home/section2/image1.png"
+                alt=""
+                class="object-fit-cover"
+              />
+            </div>
             <ul class="d-flex pic-inline">
               <li>
                 <img src="/assets/images/home/section2/image2.png" alt="" />
@@ -352,24 +356,30 @@
       <!-- 02 -->
       <div class="container-fluid position-relative overflow-hidden">
         <!-- pic -->
-        <div class="container d-flex flex-row-reverse">
-          <div class="col-lg-7 d-flex flex-column align-items-end">
-            <img
-              src="/assets/images/home/section2/image5.jpg"
-              alt=""
-              class="ratio ratio-75x60 border border-white border-4 mb-4 mb-lg-0 rounded-4"
-            />
-            <ul class="d-flex pic-inline me-md-n32">
-              <li>
-                <img src="/assets/images/home/section2/image6.jpg" alt="" />
-              </li>
-              <li>
-                <img src="/assets/images/home/section2/image7.jpg" alt="" />
-              </li>
-              <li>
-                <img src="/assets/images/home/section2/image8.jpg" alt="" />
-              </li>
-            </ul>
+        <div class="container">
+          <div class="row flex-lg-row-reverse">
+            <div class="col-lg-7 d-flex flex-column align-items-end">
+              <div
+                class="product-pic ratio ratio-75x60 mb-4 mb-lg-0 border border-white border-4 rounded-4 overflow-hidden"
+              >
+                <img
+                  src="/assets/images/home/section2/image5.jpg"
+                  alt=""
+                  class="object-fit-cover"
+                />
+              </div>
+              <ul class="d-flex pic-inline me-md-n32">
+                <li>
+                  <img src="/assets/images/home/section2/image6.jpg" alt="" />
+                </li>
+                <li>
+                  <img src="/assets/images/home/section2/image7.jpg" alt="" />
+                </li>
+                <li>
+                  <img src="/assets/images/home/section2/image8.jpg" alt="" />
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <!-- card-->
@@ -412,6 +422,7 @@
         </div>
       </div>
     </section>
+
     <!-- 親子學 -->
     <section class="use-cases p-10 py-lg-25 mb-4 mb-lg-0 position-relative">
       <div class="container">
@@ -536,7 +547,7 @@
           </picture>
         </h2>
         <!-- cards -->
-        <div class="row row-cols-1 row-cols-lg-2 gy-15">
+        <div class="row row-cols-1 row-cols-lg-2 gy-6 gy-xl-15">
           <!-- 01 -->
           <div class="col">
             <div
