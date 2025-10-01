@@ -1,0 +1,55 @@
+@font-face {
+  font-family: naikaifont;
+  src: url(https://cdn.jsdelivr.net/gh/max32002/naikaifont@1.0/webfont/NaikaiFont-Regular-Lite.woff2)
+    format("woff2");
+}
+
+.products-banner {
+  height: 560px;
+  position: relative;
+
+  &__title {
+    position: relative;
+    width: 476px;
+    height: 240px;
+    font-family: "naikaifont";
+
+    h1,
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__img {
+    width: 660px;
+    height: 440px;
+  }
+
+  .decorations {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    > div {
+      position: absolute;
+    }
+
+    &__top-left {
+      top: 0;
+      left: 0;
+    }
+    &__top-right {
+      top: 0;
+      right: 0;
+    }
+    &__bottom-right {
+      bottom: 0;
+      right: 0;
+    }
+  }
+}

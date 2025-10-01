@@ -2,7 +2,7 @@
   <!-- navbar -->
   <nav class="navbar navbar-expand-lg bg-white py-2 py-xl-4">
     <div class="container justify-content-between">
-      <a class="navbar-brand p-0" href="#">
+      <a class="navbar-brand p-0" href="index.html">
         <img src="/assets/images/logo.png" alt="" />
       </a>
       <button
@@ -81,9 +81,11 @@
     </div>
   </nav>
   <!-- promo-bar -->
+  <% if (typeof isIndex !== 'undefined' && isIndex) { %>
   <small class="bg-pink-500 text-white text-center py-2">
     週年慶<span class="border-start-1 border-white ms-4 ps-4"
       >滿千送百，精美小禮加碼送</span
     >
   </small>
+  <% } %>
 </div>

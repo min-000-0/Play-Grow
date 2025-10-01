@@ -2,10 +2,10 @@
 <html lang="zh-TW">
   <head>
     <%- include('./layout/head'); -%>
-    <title>index</title>
+    <title>Play Grow</title>
   </head>
   <body>
-    <%- include('./layout/header'); -%>
+    <%- include('layout/header', { isIndex: true }) %>
 
     <!-- hero -->
     <section class="hero-section overflow-hidden">
@@ -342,9 +342,9 @@
                 孩子倒出一盒五彩積木，眼睛閃閃發亮。磁性吸附的聲音，像是靈感的碰撞
                 。一塊塊拼出城堡、動物、太空船，世界在小手中展開。你在旁陪伴，一起笑、一起想，學習從玩樂中自然萌芽。
               </p>
-              <button type="button" class="btn btn-primary btn-primary w-75">
+              <a href="products.html" class="btn btn-primary w-75">
                 探索更多
-              </button>
+              </a>
             </div>
             <!-- art -->
             <div class="d-none d-xxl-block ms-28 mt-5 me-5 flex-shrink-0">
