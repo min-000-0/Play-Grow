@@ -8,15 +8,12 @@ import "swiper/css/grid";
 // swiper1
 const swiper1 = new Swiper(".swiper1", {
   // configure Swiper to use modules
-  modules: [Navigation, Pagination],
+  modules: [Navigation],
   // centeredSlides: false,
   // loop: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
-  },
-  pagination: {
-    el: ".swiper-pagination",
   },
 
   spaceBetween: 24,
@@ -27,14 +24,13 @@ const swiper1 = new Swiper(".swiper1", {
       slidesPerView: "5",
     },
     576: {
+      enabled: true,
       centeredSlides: true,
       loop: true,
       slidesPerView: "2.5",
     },
     0: {
-      centeredSlides: true,
-      loop: false,
-      slidesPerView: "1.2",
+      enabled: false,
     },
   },
 });
