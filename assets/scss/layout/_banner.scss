@@ -5,8 +5,16 @@
 }
 
 .products-banner {
-  height: 560px;
   position: relative;
+  @include media-breakpoint-up(lg) {
+    height: 560px;
+  }
+
+  .container {
+    @include media-breakpoint-up(lg) {
+      height: 100%;
+    }
+  }
 
   &__title {
     position: relative;
@@ -24,8 +32,9 @@
   }
 
   &__img {
-    width: 660px;
-    height: 440px;
+    img {
+      max-height: 440px;
+    }
   }
 
   .decorations {

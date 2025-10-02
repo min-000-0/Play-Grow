@@ -1,17 +1,22 @@
-<section class="products-banner bg-secondary-100 py-10">
+<% const pageTitles = { 'products': '產品分類', 'productIntroduction':
+'產品介紹', 'about': '關於 PlayGrow' }; %>
+
+<section class="products-banner bg-secondary-100 py-10 py-lg-0">
   <div class="container">
-    <div class="d-flex justify-content-end align-items-center">
+    <div class="d-flex justify-content-center justify-content-lg-end h-100">
       <!-- title -->
-      <div class="products-banner__title">
-        <h1 class="text-white z-2">產品分類</h1>
+      <div class="products-banner__title mx-6 align-self-center z-2">
+        <h1 class="text-white z-2"><%= pageTitles[currentPage] %></h1>
         <img src="/assets/images/banner/banner-title-bg.svg" alt="" />
       </div>
       <!-- pic -->
-      <div class="products-banner__img ms-n12">
+      <div
+        class="products-banner__img ms-n12 d-none d-lg-block align-self-end z-2"
+      >
         <img src="/assets/images/banner/banner-pic.png" alt="" />
       </div>
       <!-- decorations -->
-      <div class="decorations">
+      <div class="decorations d-none d-xl-block">
         <div class="decorations__top-left">
           <img src="/assets/images/banner/decoration1.svg" alt="" />
         </div>
