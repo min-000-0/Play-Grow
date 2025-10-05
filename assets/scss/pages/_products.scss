@@ -1,17 +1,40 @@
-.menu-item a {
+.menu-title {
   padding: 24px;
-  position: relative;
-  margin-left: 24px;
+  display: flex;
+  gap: 16px;
+  color: $gray-700;
+  background-color: $primary-200;
 
   &::before {
     content: "";
-    background: url(/assets/images/icon.png);
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translate(0, -50%);
     width: 24px;
     height: 24px;
+    background: url(/assets/images/icon2.png);
     background-size: cover;
+
   }
+}
+
+.menu-item a {
+  padding: 24px;
+  display: flex;
+  gap: 16px;
+  color: $gray-700;
+  border-bottom: 1px solid $gray-300;
+  
+  &::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background: url(/assets/images/icon.png);
+    background-size: cover;
+    padding-right: 12px;
+  }
+}
+
+.has-submenu > a::after {
+  content: '▼';
+  float: right;
+  font-size: 12px;
+  transition: transform 0.3s;
 }
