@@ -10,10 +10,44 @@
 
     <%- include('./layout/banner', { currentPage: 'products' }) %>
 
-    <main class="py-25">
-      <div class="container">
+    <main class="py-10 py-md-25">
+      <div class="container-lg">
+        <!-- menu-mobile -->
+        <div
+          class="accordion accordion-mobile d-md-block d-md-none mb-6"
+          id="accordionMobile"
+        >
+          <h3 class="accordion-header">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              產品分類
+            </button>
+          </h3>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionMobile"
+          >
+            <div class="accordion-body">
+              <ul>
+                <li><a href="#">新品報到</a></li>
+                <li><a href="#">冠軍排名</a></li>
+                <li><a href="#">限時搶購</a></li>
+                <li><a href="#">創意積木</a></li>
+                <li><a href="#">美術繪本</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
         <!-- breadcrumb -->
-        <nav aria-label="breadcrumb" class="mb-15">
+        <nav aria-label="breadcrumb" class="mb-6 mb-md-15">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#">首頁</a></li>
             <li class="breadcrumb-item">
@@ -26,73 +60,109 @@
         </nav>
 
         <!-- main content -->
-        <div class="row">
+        <div class="d-flex gap-6 mb-6 mb-md-10">
           <!-- sidebar -->
-          <div class="col-3">
-            <nav class="sidebar-menu">
-              <ul>
-                <li class="menu-title">
-                  產品分類
-                </li>
-                <li class="menu-item">
-                  <a href="#">
-                    新品報到
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="#">
-                    冠軍排名
-                  </a>
-                </li>
-                <li class="menu-item has-submenu">
-                  <a href="#">
-                    限時搶購
-                  </a>
-                  <ul class="submenu">
-                    <li><a href="#">超級品牌月 - 全面 88 折</a></li>
-                    <li><a href="#">周年慶 - 滿千折百</a></li>
-                  </ul>
-                </li>
-                <li class="menu-item">
-                  <a href="#">
-                    創意積木
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="#">
-                    美術繪本
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div class="col-9">
-            <div class="p-6 bg-secondary-100 rounded rounded-4 border border-gray-300 mb-6">
-              <h2 class="h6 text-primary mb-3">積木．孩子成長的創造夥伴</h2>
-              <small class="text-gray-700">在忙碌的生活中，沒有什麼比和孩子一起動手拼積木更有意義了。 無論是親子共創一座夢想城堡，還是孩子獨立完成一個太空基地，PlayGrow親子學共學積木系列都提供多種造型與玩法，滿足孩子對創造世界的無限想像。 選擇PlayGrow 親子學，輕鬆打造專屬於你們的學習時光，享受從玩中學、從學中玩的高品質共學體驗。</small>
-            </div>
+          <nav class="sidebar-menu d-none d-md-block">
             <ul>
-              <li><a href="#">
-                <div class="swiper-slide d-none d-lg-block">
+              <li class="menu-title">產品分類</li>
+              <li class="menu-item">
+                <a href="#"> 新品報到 </a>
+              </li>
+              <li class="menu-item">
+                <a href="#"> 冠軍排名 </a>
+              </li>
+              <li
+                class="menu-item accordion accordion-desktop"
+                id="accordionDesktop"
+              >
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    限時搶購
+                  </button>
+                </h3>
                 <div
-                  class="product-card border p-6 rounded-4 position-relative"
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#accordionDesktop"
                 >
-                  <div class="ratio ratio-19x20 mb-4">
-                    <img
-                      src="/assets/images/home/section2/image2.png"
-                      alt="感官教具積木組"
-                      class="rounded object-fit-cover"
-                    />
+                  <div class="accordion-body">
+                    <ul class="submenu">
+                      <li><a href="#">超級品牌月 - 全面 88 折</a></li>
+                      <li><a href="#">周年慶 - 滿千折百</a></li>
+                    </ul>
                   </div>
-                  <div>
-                    <h4 class="mb-2 fs-md fw-normal lh-base">感官教具積木組</h4>
-                    <p class="fw-bold text-primary-600">NT$ 7,777</p>
-                  </div>
+                </div>
+              </li>
+              <li class="menu-item">
+                <a href="#"> 創意積木 </a>
+              </li>
+              <li class="menu-item">
+                <a href="#"> 美術繪本 </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- content -->
+          <div>
+            <!-- intro -->
+            <div
+              class="p-6 bg-secondary-100 rounded rounded-4 border border-gray-300 mb-6"
+            >
+              <h2 class="h6 text-primary mb-3">積木．孩子成長的創造夥伴</h2>
+              <small class="text-gray-700"
+                >在忙碌的生活中，沒有什麼比和孩子一起動手拼積木更有意義了。
+                無論是親子共創一座夢想城堡，還是孩子獨立完成一個太空基地，PlayGrow親子學共學積木系列都提供多種造型與玩法，滿足孩子對創造世界的無限想像。
+                選擇PlayGrow
+                親子學，輕鬆打造專屬於你們的學習時光，享受從玩中學、從學中玩的高品質共學體驗。</small
+              >
+            </div>
+            <!-- products -->
+            <ul class="row row-cols-1 row-cols-md-3 g-4">
+              <!-- 01 -->
+              <li class="col">
+                <div class="position-relative">
+                  <!-- card -->
+                  <a href="#">
+                    <div class="product-card border p-6 rounded-4">
+                      <div class="ratio ratio-19x20 mb-4">
+                        <img
+                          src="/assets/images/products/image1.png"
+                          alt="感官教具積木組"
+                          class="rounded object-fit-cover"
+                        />
+                      </div>
+                      <div>
+                        <h4 class="mb-2 fs-md fw-normal lh-base text-gray-700">
+                          感官教具積木組
+                        </h4>
+                        <p class="fw-bold text-primary-600">NT$ 7,777</p>
+                      </div>
+                    </div>
+                  </a>
                   <!-- badge -->
                   <span
-                    class="product-card__badge badge rounded-pill text-bg-secondary-300 fs-sm fw-normal"
-                    >熱賣中</span
+                    class="product-card__badge badge rounded-pill text-primary-700 bg-secondary-100 border border-secondary-400 fs-sm fw-normal"
                   >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      id="Filled"
+                      viewBox="0 0 24 24"
+                      width="16"
+                      height="16"
+                      class="badge-icon"
+                    >
+                      <path
+                        d="M22.766,4.566A1.994,1.994,0,0,0,20.586,5L18,7.586,13.414,3a2,2,0,0,0-2.828,0L6,7.586,3.414,5A2,2,0,0,0,0,6.414V17a5.006,5.006,0,0,0,5,5H19a5.006,5.006,0,0,0,5-5V6.414A2,2,0,0,0,22.766,4.566Z"
+                      />
+                    </svg>
+                    TOP 1
+                  </span>
                   <!-- heart -->
                   <button
                     type="button"
@@ -102,16 +172,176 @@
                     <i class="fi fi-sr-heart"></i>
                   </button>
                 </div>
-              </div>
-              </a></li>
+              </li>
+              <!-- 02 -->
+              <li class="col">
+                <div class="position-relative">
+                  <!-- card -->
+                  <a href="#">
+                    <div class="product-card border p-6 rounded-4">
+                      <div class="ratio ratio-19x20 mb-4">
+                        <img
+                          src="/assets/images/products/image2.png"
+                          alt="感官教具積木組"
+                          class="rounded object-fit-cover"
+                        />
+                      </div>
+                      <div>
+                        <h4 class="mb-2 fs-md fw-normal lh-base text-gray-700">
+                          感官教具積木組
+                        </h4>
+                        <p class="fw-bold text-primary-600">NT$ 7,777</p>
+                      </div>
+                    </div>
+                  </a>
+                  <!-- badge -->
+                  <span
+                    class="product-card__badge badge rounded-pill text-primary-700 bg-secondary-100 border border-secondary-400 fs-sm fw-normal"
+                    >TOP 2</span
+                  >
+                  <!-- heart -->
+                  <button
+                    type="button"
+                    class="product-card__favBtn favBtn"
+                    aria-label="加入收藏"
+                  >
+                    <i class="fi fi-rr-heart"></i>
+                  </button>
+                </div>
+              </li>
+              <!-- 03 -->
+              <li class="col">
+                <div class="position-relative">
+                  <!-- card -->
+                  <a href="#">
+                    <div class="product-card border p-6 rounded-4">
+                      <div class="ratio ratio-19x20 mb-4">
+                        <img
+                          src="/assets/images/products/image3.png"
+                          alt="感官教具積木組"
+                          class="rounded object-fit-cover"
+                        />
+                      </div>
+                      <div>
+                        <h4 class="mb-2 fs-md fw-normal lh-base text-gray-700">
+                          感官教具積木組
+                        </h4>
+                        <p class="fw-bold text-primary-600">NT$ 7,777</p>
+                      </div>
+                    </div>
+                  </a>
+                  <!-- badge -->
+                  <span
+                    class="product-card__badge badge rounded-pill text-primary-700 bg-secondary-100 border border-secondary-400 fs-sm fw-normal"
+                    >TOP 3</span
+                  >
+                  <!-- heart -->
+                  <button
+                    type="button"
+                    class="product-card__favBtn favBtn"
+                    aria-label="加入收藏"
+                  >
+                    <i class="fi fi-rr-heart"></i>
+                  </button>
+                </div>
+              </li>
+              <!-- 04 -->
+              <li class="col">
+                <div class="position-relative">
+                  <!-- card -->
+                  <a href="#">
+                    <div class="product-card border p-6 rounded-4">
+                      <div class="ratio ratio-19x20 mb-4">
+                        <img
+                          src="/assets/images/products/image4.png"
+                          alt="和本 - 動物世界積木拼圖"
+                          class="rounded object-fit-cover"
+                        />
+                      </div>
+                      <div>
+                        <h4 class="mb-2 fs-md fw-normal lh-base text-gray-700">
+                          感官教具積木組
+                        </h4>
+                        <p class="fw-bold text-primary-600">NT$ 7,777</p>
+                      </div>
+                    </div>
+                  </a>
+                  <!-- heart -->
+                  <button
+                    type="button"
+                    class="product-card__favBtn favBtn"
+                    aria-label="加入收藏"
+                  >
+                    <i class="fi fi-rr-heart"></i>
+                  </button>
+                </div>
+              </li>
+              <!-- 05 -->
+              <li class="col">
+                <div class="position-relative">
+                  <!-- card -->
+                  <a href="#">
+                    <div class="product-card border p-6 rounded-4">
+                      <div class="ratio ratio-19x20 mb-4">
+                        <img
+                          src="/assets/images/products/image5.png"
+                          alt="SKIN - 太空任務磁性積木組"
+                          class="rounded object-fit-cover"
+                        />
+                      </div>
+                      <div>
+                        <h4 class="mb-2 fs-md fw-normal lh-base text-gray-700">
+                          感官教具積木組
+                        </h4>
+                        <p class="fw-bold text-primary-600">NT$ 7,777</p>
+                      </div>
+                    </div>
+                  </a>
+                  <!-- heart -->
+                  <button
+                    type="button"
+                    class="product-card__favBtn favBtn"
+                    aria-label="加入收藏"
+                  >
+                    <i class="fi fi-rr-heart"></i>
+                  </button>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
+
+        <!-- pagination -->
+        <nav
+          aria-label="Page navigation example"
+          class="d-flex justify-content-center"
+        >
+          <ul class="pagination">
+            <li class="page-item disabled">
+              <a class="page-link" href="#" aria-label="Previous">
+                <i class="fi fi-ss-angle-small-left"></i>
+              </a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item"><a class="page-link" href="#">6</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <i class="fi fi-ss-angle-small-right"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </main>
 
-    <main></main>
     <%- include('./layout/footer'); -%>
     <script type="module" src="../main.js"></script>
+    <script type="module" src="../js/favBtn.js"></script>
   </body>
 </html>

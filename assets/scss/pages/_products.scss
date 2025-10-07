@@ -1,3 +1,67 @@
+// menu-mobile
+.accordion-mobile {
+  button {
+    padding: 24px;
+    display: flex;
+    gap: 16px;
+    color: $gray-700;
+    background-color: $primary-200;
+
+    &:not(.collapsed) {
+      color: $gray-700;
+    }
+
+    &::after {
+      background-image: none !important;
+      transform: none;
+      content: "\e093";
+      font-family: "uicons-regular-straight";
+      color: $gray-700;
+      font-size: 24px;
+      line-height: 1;
+      margin-left: auto;
+      width: auto;
+      height: auto;
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+
+    &::before {
+      content: "";
+      width: 24px;
+      height: 24px;
+      background: url(/assets/images/icon2.png);
+      background-size: cover;
+    }
+  }
+}
+
+.accordion-mobile .accordion-body {
+  padding: 0;
+
+  li a {
+    padding: 24px;
+    display: flex;
+    gap: 16px;
+    color: $gray-700;
+
+    &::before {
+      content: "";
+      width: 24px;
+      height: 24px;
+      background: url(/assets/images/icon.png);
+      background-size: cover;
+    }
+  }
+}
+
+// side-menu
+.sidebar-menu {
+  min-width: 306px;
+}
+
 .menu-title {
   padding: 24px;
   display: flex;
@@ -11,30 +75,124 @@
     height: 24px;
     background: url(/assets/images/icon2.png);
     background-size: cover;
-
   }
 }
 
-.menu-item a {
-  padding: 24px;
-  display: flex;
-  gap: 16px;
-  color: $gray-700;
+.menu-item {
   border-bottom: 1px solid $gray-300;
-  
-  &::before {
-    content: "";
-    width: 24px;
-    height: 24px;
-    background: url(/assets/images/icon.png);
-    background-size: cover;
-    padding-right: 12px;
+
+  > a,
+  &.accordion-desktop .accordion-button {
+    padding: 24px;
+    display: flex;
+    gap: 16px;
+    color: $gray-700;
+    background-color: #fff;
+
+    &::before {
+      content: "";
+      width: 24px;
+      height: 24px;
+      background: url(/assets/images/icon.png);
+      background-size: cover;
+    }
+
+    &:hover {
+      background-color: $gray-100;
+    }
   }
 }
 
-.has-submenu > a::after {
-  content: '▼';
-  float: right;
-  font-size: 12px;
-  transition: transform 0.3s;
+.accordion-desktop .accordion-button {
+  &::after {
+    background-image: none !important;
+    transform: none;
+    content: "\e093";
+    font-family: "uicons-regular-straight";
+    color: $gray-700;
+    font-size: 24px;
+    line-height: 1;
+    margin-left: auto;
+    width: auto;
+    height: auto;
+  }
+
+  &:not(.collapsed)::after {
+    transform: rotate(180deg);
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.accordion-desktop .accordion-header {
+  --bs-accordion-border-width: 0;
+}
+
+.accordion-desktop .accordion-body {
+  padding: 0;
+
+  a {
+    color: $gray-700;
+    padding: 16px;
+    padding-left: 64px;
+
+    &:hover {
+      background-color: $gray-100;
+    }
+  }
+}
+
+// card
+.product-card__badge {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.badge-icon {
+  fill: $secondary-400;
+  stroke: $primary-600;
+}
+
+// pagination
+.pagination {
+  gap: 24px;
+
+  .active a {
+    border-radius: 50px;
+    background-color: $primary-100;
+    color: $gray-700;
+  }
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: none;
+    color: $gray-700;
+  }
+}
+
+.page-item {
+  .page-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .fi {
+      height: 24px;
+      line-height: 1;
+    }
+  }
+
+  &.disabled {
+    .page-link {
+      background-color: transparent;
+      opacity: 0.4;
+    }
+  }
 }
