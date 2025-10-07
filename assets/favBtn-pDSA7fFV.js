@@ -1,0 +1,1 @@
+const o=document.querySelectorAll(".favBtn");o.forEach(t=>{t.addEventListener("click",e=>{e.preventDefault(),e.stopPropagation();const r=t.querySelector("i");r.classList.toggle("fi-rr-heart"),r.classList.toggle("fi-sr-heart")})});
