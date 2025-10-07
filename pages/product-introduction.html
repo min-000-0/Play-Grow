@@ -10,7 +10,26 @@
 
     <%- include('./layout/banner', { currentPage: 'productIntroduction' }) %>
 
-    <main></main>
+    <main class="py-10 py-md-25">
+      <div class="container-lg">
+        <!-- breadcrumb -->
+        <nav aria-label="breadcrumb" class="mb-6 mb-md-15">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">首頁</a></li>
+            <li class="breadcrumb-item">
+              <a href="#">親子學 - 共學積木系列</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              創意積木系列
+            </li>
+          </ol>
+        </nav>
+        <!-- product-section -->
+        <section></section>
+        <!-- other-section -->
+        <section></section>
+      </div>
+    </main>
     <%- include('./layout/footer'); -%>
     <script type="module" src="../main.js"></script>
   </body>

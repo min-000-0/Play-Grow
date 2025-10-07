@@ -160,39 +160,41 @@
 .pagination {
   gap: 24px;
 
-  .active a {
-    border-radius: 50px;
-    background-color: $primary-100;
-    color: $gray-700;
-  }
-
-  a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    border: none;
-    color: $gray-700;
-  }
-}
-
-.page-item {
-  .page-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .fi {
-      height: 24px;
-      line-height: 1;
+  .page-item {
+    &.active {
+      .page-link {
+        border-radius: 50px;
+        background-color: $primary-100;
+        color: $gray-700;
+      }
     }
-  }
 
-  &.disabled {
+    &.disabled {
+      .page-link {
+        background-color: transparent;
+        opacity: 0.4;
+      }
+    }
+
     .page-link {
-      background-color: transparent;
-      opacity: 0.4;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border: none;
+      color: $gray-700;
+      transition: all 0.2s ease;
+
+      .fi {
+        height: 24px;
+        line-height: 1;
+      }
+
+      &:hover {
+        border-radius: 50px;
+        color: $gray-700;
+      }
     }
   }
 }
