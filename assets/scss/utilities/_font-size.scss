@@ -8,12 +8,18 @@ $utilities: map-merge(
       class: fs,
       values:
         map-merge(
-          map-get(map-get($utilities, "font-size"), "values"),
+          map-merge(
+            map-get(map-get($utilities, "font-size"), "values"),
+            (
+              "xs": $font-size-base * 0.75,
+              "sm": $font-size-base * 0.875,
+              "md": $font-size-base,
+              "lg": $font-size-base * 1.25,
+            )
+          ),
           (
-            "xs": $font-size-base * 0.75,
-            "sm": $font-size-base * 0.875,
-            "md": $font-size-base,
-            "lg": $font-size-base * 1.25,
+            "display-1": 4rem,
+            "display-2": 3rem,
           )
         ),
     ),

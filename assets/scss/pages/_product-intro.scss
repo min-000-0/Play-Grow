@@ -1,0 +1,29 @@
+.product-container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 20px;
+}
+
+.product-content {
+  grid-column: 1;
+}
+
+.cta-box {
+  grid-column: 2;
+  grid-row: 1;
+  position: sticky;
+  top: 20px;
+}
+
+/* 手機版：改變順序 */
+@media (max-width: 768px) {
+  .product-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cta-box {
+    order: -1; /* 或用 order: 0，調整到標題後 */
+    position: static;
+  }
+}

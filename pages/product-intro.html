@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <%- include('./layout/head'); -%>
+    <title>產品介紹｜Play Grow</title>
+  </head>
+  <body>
+    <!-- prettier-ignore -->
+    <%- include('layout/header') %>
+
+    <%- include('./layout/banner', { currentPage: 'productIntroduction' }) %>
+
+    <main class="py-10 py-md-25">
+      <div class="container-lg">
+        <!-- breadcrumb -->
+        <nav aria-label="breadcrumb" class="mb-6 mb-md-15">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">首頁</a></li>
+            <li class="breadcrumb-item">
+              <a href="#">親子學 - 共學積木系列</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              創意積木系列
+            </li>
+          </ol>
+        </nav>
+        <!-- product-section -->
+        <section>
+          <!-- 產品圖片 -->
+          <div class="row row-cols-1 row-cols-md-2 g-4 mb-6 mb-md-10">
+            <div class="col">
+              <div
+                class="ratio ratio-4x3 border border-4 border-primary-600 rounded overflow-hidden"
+              >
+                <img
+                  src="/assets/images/product-intro/image1.png"
+                  alt=""
+                  class="img-fluid w-100 h-100"
+                  style="object-fit: cover; aspect-ratio: 1 / 1"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="row g-4">
+                <div class="col-6">
+                  <div class="ratio ratio-4x3 rounded overflow-hidden">
+                    <img
+                      src="/assets/images/product-intro/image2.png"
+                      alt=""
+                      class="object-fit-cover"
+                    />
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="ratio ratio-4x3 rounded overflow-hidden">
+                    <img
+                      src="/assets/images/product-intro/image3.png"
+                      alt=""
+                      class="object-fit-cover"
+                    />
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="ratio ratio-4x3 rounded overflow-hidden">
+                    <img
+                      src="/assets/images/product-intro/image4.png"
+                      alt=""
+                      class="object-fit-cover"
+                    />
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="ratio ratio-4x3 rounded overflow-hidden">
+                    <img
+                      src="/assets/images/product-intro/image5.png"
+                      alt=""
+                      class="object-fit-cover"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 產品內容 -->
+          <!-- title -->
+          <div class="d-flex gap-6 align-items-center mb-4">
+            <h1 class="fs-5 fs-md-4 fw-normal text-gray-900">
+              H2Mind - 彩虹磁力創意積木組(C003)
+            </h1>
+            <button
+              type="button"
+              class="product-card__favBtn favBtn position-relative"
+              style="top: 0; right: 0"
+              aria-label="加入收藏"
+            >
+              <i class="fi fi-rr-heart"></i>
+            </button>
+          </div>
+          <!-- badge -->
+          <div class="d-flex gap-4">
+            <span
+              class="badge rounded-pill text-bg-secondary-300 fw-normal fs-sm px-2 py-1 lh-base"
+              >VIP 會員獨享</span
+            >
+            <span
+              class="badge rounded-pill text-bg-secondary-300 fw-normal fs-sm px-2 py-1 lh-base"
+              >周年慶 滿千送買</span
+            >
+          </div>
+        </section>
+        <!-- other-section -->
+        <section></section>
+      </div>
+    </main>
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+    <script type="module" src="../js/favBtn.js"></script>
+  </body>
+</html>
