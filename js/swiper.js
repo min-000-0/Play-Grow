@@ -53,3 +53,30 @@ const swiper2 = new Swiper(".swiper2", {
     },
   },
 });
+
+// swiper3
+const swiper3 = new Swiper(".swiper3", {
+  // configure Swiper to use modules
+  modules: [Navigation],
+  // centeredSlides: false,
+  // loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  spaceBetween: 24,
+  breakpoints: {
+    992: {
+      centeredSlides: false,
+      loop: true,
+      slidesPerView: "5",
+    },
+    576: {
+      enabled: true,
+      centeredSlides: true,
+      loop: true,
+      slidesPerView: "2.5",
+    },
+  },
+});
