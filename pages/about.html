@@ -10,7 +10,23 @@
 
     <%- include('./layout/banner', { currentPage: 'about' }) %>
 
-    <main></main>
+    <main>
+      <!-- 品牌年表 -->
+      <section class="py-10 py-lg-25">
+        <div class="container">
+          <!-- title -->
+          <h2 class="fs-0 lh-0 text-center text-lg-start mb-6 mb-lg-15">
+            <picture class="mb-2 mb-lg-4">
+              <source
+                media="(min-width: 992px)"
+                srcset="/assets/images/home/section1/title1.svg"
+              />
+              <img src="/assets/images/home/section1/title1-sm.svg" alt="" />
+            </picture>
+          </h2>
+        </div>
+      </section>
+    </main>
     <%- include('./layout/footer'); -%>
     <script type="module" src="../main.js"></script>
   </body>
