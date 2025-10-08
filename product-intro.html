@@ -22,7 +22,9 @@
     <title>產品介紹｜Play Grow</title>
     <script type="module" crossorigin src="/Play-Grow/assets/main-BAvOS8oX.js"></script>
     <script type="module" crossorigin src="/Play-Grow/assets/favBtn-pDSA7fFV.js"></script>
+    <script type="module" crossorigin src="/Play-Grow/assets/swiper-BKTwEZwi.js"></script>
     <link rel="stylesheet" crossorigin href="/Play-Grow/assets/main-Cic0AicZ.css">
+    <link rel="stylesheet" crossorigin href="/Play-Grow/assets/swiper-DolK0y7J.css">
   </head>
   <body>
     <!-- prettier-ignore -->
@@ -162,6 +164,7 @@
             </li>
           </ol>
         </nav>
+
         <!-- product-section -->
         <section>
           <!-- 產品圖片 -->
@@ -220,34 +223,369 @@
             </div>
           </div>
           <!-- 產品內容 -->
-          <!-- title -->
-          <div class="d-flex gap-6 align-items-center mb-4">
-            <h1 class="fs-5 fs-md-4 fw-normal text-gray-900">
-              H2Mind - 彩虹磁力創意積木組(C003)
-            </h1>
-            <button
-              type="button"
-              class="product-card__favBtn favBtn position-relative"
-              style="top: 0; right: 0"
-              aria-label="加入收藏"
-            >
-              <i class="fi fi-rr-heart"></i>
-            </button>
-          </div>
-          <!-- badge -->
-          <div class="d-flex gap-4">
-            <span
-              class="badge rounded-pill text-bg-secondary-300 fw-normal fs-sm px-2 py-1 lh-base"
-              >VIP 會員獨享</span
-            >
-            <span
-              class="badge rounded-pill text-bg-secondary-300 fw-normal fs-sm px-2 py-1 lh-base"
-              >周年慶 滿千送買</span
-            >
+          <div class="row">
+            <!-- 標題 -->
+            <div class="col-md-7">
+              <!-- title -->
+              <div class="d-flex gap-6 align-items-center mb-4">
+                <h1 class="fs-5 fs-md-4 fw-normal text-gray-900">
+                  H2Mind - 彩虹磁力創意積木組(C003)
+                </h1>
+                <button
+                  type="button"
+                  class="product-card__favBtn favBtn position-relative"
+                  style="top: 0; right: 0"
+                  aria-label="加入收藏"
+                >
+                  <i class="fi fi-rr-heart"></i>
+                </button>
+              </div>
+              <!-- badge -->
+              <div class="d-flex gap-4 pb-6">
+                <span
+                  class="badge rounded-pill text-bg-secondary-300 fw-normal fs-sm px-2 py-1 lh-base"
+                  >VIP 會員獨享</span
+                >
+                <span
+                  class="badge rounded-pill text-bg-secondary-300 fw-normal fs-sm px-2 py-1 lh-base"
+                  >周年慶 滿千送買</span
+                >
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="text-bg-secondary-100 p-6 rounded-4 border">
+                <!-- text -->
+                <div class="mb-6">
+                  <h2 class="fs-6 fs-md-4 fw-bold text-primary-600 mb-3">
+                    NTD 5,161
+                  </h2>
+                  <small class="text-gray-600">已售出 3,321 件</small>
+                </div>
+                <!-- btn -->
+                <div class="d-flex flex-column flex-md-row gap-4">
+                  <button type="button" class="btn btn-primary w-md-50">
+                    直接購買
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-primary bg-white w-md-50"
+                  >
+                    加進購物車
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- 內容 -->
+            <!-- 01 -->
+            <div class="col-md-7">
+              <div class="border-top mt-6 pt-6">
+                <h3 class="h6 fw-normal mb-6">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAMKADAAQAAAABAAAAMAAAAADbN2wMAAADrElEQVRoBdVZTVbbMBCeUWKH7nKEsOl7QOmDEzS5QThB4QTAhteEBWFB6OsGegLCDbgB3ID0h7AkR/AKqJNYnXHiVHVsIv8kcbyxPJZG3/j7JI1khBQu+dQo9l8L+9KRVUAsgpSlkds2ALYNAae4Vuum0NWEC5ywRDC4wF/MEynhYHozbM0ikNgBvDyel3IO3AKMv/b0GAAsFHhprNVOdSrr1IkVAH/53nPhPiJ4FU/XEFhJQ1ZC9apbtp9XrhKA525KPUc+9R7PT3T7DKsXmQHulAZrI8xhDHsiNiIx0O80qymD53gTsaHNQMxBG5WQyGxoM5CTkFT3OsEwG/f2w9muTmWuoxWAO9ikLOs6TVivSIvfld35eqHjZ6qEhtKRTzrOZlBnqqSmMjBcrGYATc8lS+rWfvi2FVb9zQB6nSbRGGmlDesnib0E0L9/7TQD05VQCZHuyzRl3ibpOe22lIY0/GlIIAOcKkiHZ51sXbwG+VfvwAD6lGFmQDqBX88fxISEFjzrBIIOMnpymgjAfjinKXPhAzcI84QNHazkVOtowaqqtkyXBZbGDCyLdHwf1BoPYlqwaOAu3VV0GRiudH3aYS3dNWIAB1qJU+bCQ2wL1j4dg5QzB04HkHR+iJzjBOYYOu0XXscwWjSI8dPCgcQBgNA23x+1eRYKTVXj+J1bGym/c1/5uXWYZkcIXXP9uMUuWUJdLizTZSBWPLxCgnPtPSzHHVvqiZ4w7d4lnSh3lwI8SYcPiFWsArcbFsjcDkiw1BeZLEs5cUzvphIMltLoXUqjrzIJnEG5A7e+6sc3TubMjVqLau1llQl14KpBjANgoxsE5itZGxO0jZyQjhfEWEKege/u3kDSz4t/v4rU1/Mth0jHA/EfA57xHf3PGiAwE3eebVH3MOl4eAIZ8F7y/c+vswZtoBey2XEkHK58qF+qePzlqQFwg/7PZtXJ48U8JSVB3BQ2vuz4AfufAyXkr5T/WL9hSbFT/7uZPLPuhTzU8a3FgOrI/k1nlAgz3cEJhJ38el3rY2kxoAZgkiYHAldnNdXylKkLnnFFZkANxmUD6DQDoajaY5dp1jPXa5Uo7SMzoDp32cjhNv2pv1btscqkewNhL2rbRAyonbm5FBIb8RY/i358b6tpsur7rXJqAXiduOtGTnyOEIhFG8OKuXHU9nxEuSeSUFBHhc3jhjvl6sjKXenjg+f+U2dADWp43gplStP3yb41emfRDNbGAZwam7W7kS327S9zM07BVbmZlgAAAABJRU5ErkJggg=="
+                    alt=""
+                    style="width: 24px; height: 24px"
+                  />
+                  <span class="ms-4">產品說明</span>
+                </h3>
+                <ul class="text-gray-600 ms-7">
+                  <li style="list-style: disc" class="mb-4">
+                    繽紛色彩設計，打造孩子專屬的創意世界！
+                  </li>
+                  <li style="list-style: disc" class="mb-4">
+                    磁力吸附結構，拼搭穩固又好拆，怎麼玩都順手！
+                  </li>
+                  <li style="list-style: disc" class="mb-4">
+                    安全圓角材質，通過耐摔測試，爸媽安心、孩子開心！
+                  </li>
+                  <li style="list-style: disc" class="mb-4">
+                    多元造型組件，室內外皆可遊玩，親子共學不受限！
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- 02 -->
+            <div class="col-md-7">
+              <div class="border-top mt-6 pt-6">
+                <h3 class="h6 fw-normal mb-6">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAMKADAAQAAAABAAAAMAAAAADbN2wMAAADrElEQVRoBdVZTVbbMBCeUWKH7nKEsOl7QOmDEzS5QThB4QTAhteEBWFB6OsGegLCDbgB3ID0h7AkR/AKqJNYnXHiVHVsIv8kcbyxPJZG3/j7JI1khBQu+dQo9l8L+9KRVUAsgpSlkds2ALYNAae4Vuum0NWEC5ywRDC4wF/MEynhYHozbM0ikNgBvDyel3IO3AKMv/b0GAAsFHhprNVOdSrr1IkVAH/53nPhPiJ4FU/XEFhJQ1ZC9apbtp9XrhKA525KPUc+9R7PT3T7DKsXmQHulAZrI8xhDHsiNiIx0O80qymD53gTsaHNQMxBG5WQyGxoM5CTkFT3OsEwG/f2w9muTmWuoxWAO9ikLOs6TVivSIvfld35eqHjZ6qEhtKRTzrOZlBnqqSmMjBcrGYATc8lS+rWfvi2FVb9zQB6nSbRGGmlDesnib0E0L9/7TQD05VQCZHuyzRl3ibpOe22lIY0/GlIIAOcKkiHZ51sXbwG+VfvwAD6lGFmQDqBX88fxISEFjzrBIIOMnpymgjAfjinKXPhAzcI84QNHazkVOtowaqqtkyXBZbGDCyLdHwf1BoPYlqwaOAu3VV0GRiudH3aYS3dNWIAB1qJU+bCQ2wL1j4dg5QzB04HkHR+iJzjBOYYOu0XXscwWjSI8dPCgcQBgNA23x+1eRYKTVXj+J1bGym/c1/5uXWYZkcIXXP9uMUuWUJdLizTZSBWPLxCgnPtPSzHHVvqiZ4w7d4lnSh3lwI8SYcPiFWsArcbFsjcDkiw1BeZLEs5cUzvphIMltLoXUqjrzIJnEG5A7e+6sc3TubMjVqLau1llQl14KpBjANgoxsE5itZGxO0jZyQjhfEWEKege/u3kDSz4t/v4rU1/Mth0jHA/EfA57xHf3PGiAwE3eebVH3MOl4eAIZ8F7y/c+vswZtoBey2XEkHK58qF+qePzlqQFwg/7PZtXJ48U8JSVB3BQ2vuz4AfufAyXkr5T/WL9hSbFT/7uZPLPuhTzU8a3FgOrI/k1nlAgz3cEJhJ38el3rY2kxoAZgkiYHAldnNdXylKkLnnFFZkANxmUD6DQDoajaY5dp1jPXa5Uo7SMzoDp32cjhNv2pv1btscqkewNhL2rbRAyonbm5FBIb8RY/i358b6tpsur7rXJqAXiduOtGTnyOEIhFG8OKuXHU9nxEuSeSUFBHhc3jhjvl6sjKXenjg+f+U2dADWp43gplStP3yb41emfRDNbGAZwam7W7kS327S9zM07BVbmZlgAAAABJRU5ErkJggg=="
+                    alt=""
+                    style="width: 24px; height: 24px"
+                  />
+                  <span class="ms-4">注意事項</span>
+                </h3>
+                <ul class="text-gray-600 ms-7">
+                  <li style="list-style: disc" class="mb-4">離島不配送</li>
+                  <li style="list-style: disc" class="mb-4">
+                    避免使用腐蝕性強清潔劑，以延長使用年限。
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- 03 -->
+            <div class="col-md-7">
+              <div class="border-top mt-6 pt-6">
+                <h3 class="h6 fw-normal mb-6">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAMKADAAQAAAABAAAAMAAAAADbN2wMAAADrElEQVRoBdVZTVbbMBCeUWKH7nKEsOl7QOmDEzS5QThB4QTAhteEBWFB6OsGegLCDbgB3ID0h7AkR/AKqJNYnXHiVHVsIv8kcbyxPJZG3/j7JI1khBQu+dQo9l8L+9KRVUAsgpSlkds2ALYNAae4Vuum0NWEC5ywRDC4wF/MEynhYHozbM0ikNgBvDyel3IO3AKMv/b0GAAsFHhprNVOdSrr1IkVAH/53nPhPiJ4FU/XEFhJQ1ZC9apbtp9XrhKA525KPUc+9R7PT3T7DKsXmQHulAZrI8xhDHsiNiIx0O80qymD53gTsaHNQMxBG5WQyGxoM5CTkFT3OsEwG/f2w9muTmWuoxWAO9ikLOs6TVivSIvfld35eqHjZ6qEhtKRTzrOZlBnqqSmMjBcrGYATc8lS+rWfvi2FVb9zQB6nSbRGGmlDesnib0E0L9/7TQD05VQCZHuyzRl3ibpOe22lIY0/GlIIAOcKkiHZ51sXbwG+VfvwAD6lGFmQDqBX88fxISEFjzrBIIOMnpymgjAfjinKXPhAzcI84QNHazkVOtowaqqtkyXBZbGDCyLdHwf1BoPYlqwaOAu3VV0GRiudH3aYS3dNWIAB1qJU+bCQ2wL1j4dg5QzB04HkHR+iJzjBOYYOu0XXscwWjSI8dPCgcQBgNA23x+1eRYKTVXj+J1bGym/c1/5uXWYZkcIXXP9uMUuWUJdLizTZSBWPLxCgnPtPSzHHVvqiZ4w7d4lnSh3lwI8SYcPiFWsArcbFsjcDkiw1BeZLEs5cUzvphIMltLoXUqjrzIJnEG5A7e+6sc3TubMjVqLau1llQl14KpBjANgoxsE5itZGxO0jZyQjhfEWEKege/u3kDSz4t/v4rU1/Mth0jHA/EfA57xHf3PGiAwE3eebVH3MOl4eAIZ8F7y/c+vswZtoBey2XEkHK58qF+qePzlqQFwg/7PZtXJ48U8JSVB3BQ2vuz4AfufAyXkr5T/WL9hSbFT/7uZPLPuhTzU8a3FgOrI/k1nlAgz3cEJhJ38el3rY2kxoAZgkiYHAldnNdXylKkLnnFFZkANxmUD6DQDoajaY5dp1jPXa5Uo7SMzoDp32cjhNv2pv1btscqkewNhL2rbRAyonbm5FBIb8RY/i358b6tpsur7rXJqAXiduOtGTnyOEIhFG8OKuXHU9nxEuSeSUFBHhc3jhjvl6sjKXenjg+f+U2dADWp43gplStP3yb41emfRDNbGAZwam7W7kS327S9zM07BVbmZlgAAAABJRU5ErkJggg=="
+                    alt=""
+                    style="width: 24px; height: 24px"
+                  />
+                  <span class="ms-4">產品規格</span>
+                </h3>
+                <ul class="text-gray-600 ms-7">
+                  <li style="list-style: disc" class="mb-4">
+                    材質：塑膠、聚酯纖維
+                  </li>
+                  <li style="list-style: disc" class="mb-4">
+                    尺寸：36 × 25 × 24 cm
+                  </li>
+                  <li style="list-style: disc" class="mb-4">
+                    適用年齡：3歲以上
+                  </li>
+                  <li style="list-style: disc" class="mb-4">
+                    產地：美國設計 / 中國製造
+                  </li>
+                  <li style="list-style: disc" class="mb-4">保固：1 年保固</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </section>
+
         <!-- other-section -->
-        <section></section>
+        <section class="py-10 py-lg-25">
+          <div class="container d-flex flex-column">
+            <!-- title -->
+            <h2 class="fs-0 lh-0 text-center text-lg-start mb-6 mb-lg-15">
+              <picture class="mb-2 mb-lg-4">
+                <source
+                  media="(min-width: 992px)"
+                  srcset="/Play-Grow/assets/title1-BqVswPfH.svg"
+                />
+                <img src="/Play-Grow/assets/title1-sm-n31kP9p2.svg" alt="" />
+              </picture>
+            </h2>
+            <!-- cards -->
+            <div class="overflow-visible position-relative mb-6 mb-lg-15">
+              <div class="swiper swiper3">
+                <div class="swiper-wrapper">
+                  <!-- 01 -->
+                  <div class="swiper-slide">
+                    <div
+                      class="product-card border p-6 rounded-4 position-relative"
+                    >
+                      <div class="ratio ratio-19x20 mb-4">
+                        <img
+                          src="/Play-Grow/assets/image1-DJjdcGtw.png"
+                          alt="感官教具積木組"
+                          class="rounded object-fit-cover"
+                        />
+                      </div>
+                      <div>
+                        <h4 class="mb-2 fs-md fw-normal lh-base">
+                          感官教具積木組
+                        </h4>
+                        <p class="fw-bold text-primary-600">NT$ 7,777</p>
+                      </div>
+                      <!-- badge -->
+                      <span
+                        class="product-card__badge badge rounded-pill text-bg-secondary-300 fs-sm fw-normal"
+                        >熱賣中</span
+                      >
+                      <!-- heart -->
+                      <button
+                        type="button"
+                        class="product-card__favBtn favBtn"
+                        aria-label="加入收藏"
+                      >
+                        <i class="fi fi-sr-heart"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <!-- 02 -->
+                  <div class="swiper-slide">
+                    <div
+                      class="product-card border p-6 rounded-4 position-relative"
+                    >
+                      <div class="ratio ratio-19x20 mb-4">
+                        <img
+                          src="/Play-Grow/assets/image2-CscKh-3z.png"
+                          alt="感官教具積木組"
+                          class="rounded object-fit-cover"
+                        />
+                      </div>
+                      <div>
+                        <h4 class="mb-2 fs-md fw-normal lh-base">
+                          感官教具積木組
+                        </h4>
+                        <p class="fw-bold text-primary-600">NT$ 7,777</p>
+                      </div>
+                      <!-- badge -->
+                      <span
+                        class="product-card__badge badge rounded-pill text-bg-secondary-300 fs-sm fw-normal"
+                        >熱賣中</span
+                      >
+                      <!-- heart -->
+                      <button
+                        type="button"
+                        class="product-card__favBtn favBtn"
+                        aria-label="加入收藏"
+                      >
+                        <i class="fi fi-rr-heart"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <!-- 03 -->
+                  <div class="swiper-slide">
+                    <div
+                      class="product-card border p-6 rounded-4 position-relative"
+                    >
+                      <div class="ratio ratio-19x20 mb-4">
+                        <img
+                          src="/Play-Grow/assets/image3-4g2aXuaY.png"
+                          alt="感官教具積木組"
+                          class="rounded object-fit-cover"
+                        />
+                      </div>
+                      <div>
+                        <h4 class="mb-2 fs-md fw-normal lh-base">
+                          感官教具積木組
+                        </h4>
+                        <p class="fw-bold text-primary-600">NT$ 7,777</p>
+                      </div>
+                      <!-- badge -->
+                      <span
+                        class="product-card__badge badge rounded-pill text-bg-secondary-300 fs-sm fw-normal"
+                        >熱賣中</span
+                      >
+                      <!-- heart -->
+                      <button
+                        type="button"
+                        class="product-card__favBtn favBtn"
+                        aria-label="加入收藏"
+                      >
+                        <i class="fi fi-rr-heart"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <!-- 04 -->
+                  <div class="swiper-slide">
+                    <div
+                      class="product-card border p-6 rounded-4 position-relative"
+                    >
+                      <div class="ratio ratio-19x20 mb-4">
+                        <img
+                          src="/Play-Grow/assets/image4-DXQR5Y5R.png"
+                          alt="感官教具積木組"
+                          class="rounded object-fit-cover"
+                        />
+                      </div>
+                      <div>
+                        <h4 class="mb-2 fs-md fw-normal lh-base">
+                          感官教具積木組
+                        </h4>
+                        <p class="fw-bold text-primary-600">NT$ 7,777</p>
+                      </div>
+                      <!-- badge -->
+                      <span
+                        class="product-card__badge badge rounded-pill text-bg-secondary-300 fs-sm fw-normal"
+                        >熱賣中</span
+                      >
+                      <!-- heart -->
+                      <button
+                        type="button"
+                        class="product-card__favBtn favBtn"
+                        aria-label="加入收藏"
+                      >
+                        <i class="fi fi-rr-heart"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <!-- 05 -->
+                  <div class="swiper-slide">
+                    <div
+                      class="product-card border p-6 rounded-4 position-relative"
+                    >
+                      <div class="ratio ratio-19x20 mb-4">
+                        <img
+                          src="/Play-Grow/assets/image5-CWrElIHk.png"
+                          alt="感官教具積木組"
+                          class="rounded object-fit-cover"
+                        />
+                      </div>
+                      <div>
+                        <h4 class="mb-2 fs-md fw-normal lh-base">
+                          感官教具積木組
+                        </h4>
+                        <p class="fw-bold text-primary-600">NT$ 7,777</p>
+                      </div>
+                      <!-- badge -->
+                      <span
+                        class="product-card__badge badge rounded-pill text-bg-secondary-300 fs-sm fw-normal"
+                        >熱賣中</span
+                      >
+                      <!-- heart -->
+                      <button
+                        type="button"
+                        class="product-card__favBtn favBtn"
+                        aria-label="加入收藏"
+                      >
+                        <i class="fi fi-rr-heart"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <!-- 06 -->
+                  <div class="swiper-slide d-none d-lg-block">
+                    <div
+                      class="product-card border p-6 rounded-4 position-relative"
+                    >
+                      <div class="ratio ratio-19x20 mb-4">
+                        <img
+                          src="/Play-Grow/assets/image2-DuTxWs5g.png"
+                          alt="感官教具積木組"
+                          class="rounded object-fit-cover"
+                        />
+                      </div>
+                      <div>
+                        <h4 class="mb-2 fs-md fw-normal lh-base">
+                          感官教具積木組
+                        </h4>
+                        <p class="fw-bold text-primary-600">NT$ 7,777</p>
+                      </div>
+                      <!-- badge -->
+                      <span
+                        class="product-card__badge badge rounded-pill text-bg-secondary-300 fs-sm fw-normal"
+                        >熱賣中</span
+                      >
+                      <!-- heart -->
+                      <button
+                        type="button"
+                        class="product-card__favBtn favBtn"
+                        aria-label="加入收藏"
+                      >
+                        <i class="fi fi-sr-heart"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev d-none d-lg-block">
+                <i class="fi fi-rr-angle-small-left"></i>
+              </div>
+              <div class="swiper-button-next d-none d-lg-block">
+                <i class="fi fi-rr-angle-small-right"></i>
+              </div>
+            </div>
+            <!-- btn -->
+            <button
+              type="button"
+              class="btn btn-outline-primary w-50 w-lg-25 align-self-center align-self-lg-end"
+            >
+              選購去
+            </button>
+          </div>
+        </section>
       </div>
     </main>
     <footer class="footer text-center bg-secondary-400 py-10 py-lg-20">
