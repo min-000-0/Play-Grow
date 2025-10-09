@@ -1,3 +1,4 @@
+// timeline
 .timeline-item + .timeline-item {
   position: relative;
 
@@ -31,5 +32,46 @@
 
   .timeline-item:nth-child(4)::before {
     display: none;
+  }
+}
+
+// brand-story
+.brand-story {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 276px;
+    left: 84px;
+    width: 140px;
+    height: 112px;
+    background: url(/assets/images/home/section4/art1.svg);
+    background-size: contain;
+
+    @include media-breakpoint-down(xxl) {
+      display: none;
+    }
+  }
+}
+
+// Corporate Social Responsibility
+.csr {
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 280px;
+    right: -228px;
+    width: 480px;
+    height: 440px;
+    background: url(/assets/images/banner/decoration3.svg);
+    background-size: contain;
+
+    @include media-breakpoint-down(xxl) {
+      display: none;
+    }
   }
 }

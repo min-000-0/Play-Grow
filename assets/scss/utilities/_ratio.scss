@@ -1,7 +1,22 @@
+// 自訂比例
 $aspect-ratios: map-merge(
   $aspect-ratios,
   (
+    "3x4": calc(4 / 3 * 100%),
     "19x20": calc(20 / 19 * 100%),
     "75x60": calc(60 / 75 * 100%),
+  )
+);
+
+// 啟用響應式
+$utilities: map-merge(
+  $utilities,
+  (
+    "aspect-ratio": (
+      property: --bs-aspect-ratio,
+      class: ratio,
+      values: $aspect-ratios,
+      responsive: true,
+    ),
   )
 );
