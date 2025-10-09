@@ -145,6 +145,14 @@
 }
 
 // card
+.product-card {
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $secondary-100;
+  }
+}
+
 .product-card__badge {
   display: flex;
   align-items: center;
@@ -161,6 +169,8 @@
   .page-item {
     &.active {
       .page-link {
+        cursor: default;
+        pointer-events: none;
         border-radius: 50px;
         background-color: $primary-100;
         color: $gray-700;
@@ -189,9 +199,18 @@
         line-height: 1;
       }
 
-      &:hover {
+      &:hover,
+      &:focus {
         border-radius: 50px;
         color: $gray-700;
+      }
+
+      &:focus {
+        box-shadow: none;
+      }
+
+      &:focus {
+        background-color: transparent;
       }
     }
   }

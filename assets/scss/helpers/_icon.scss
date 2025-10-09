@@ -2,6 +2,10 @@
   width: 24px;
   height: 24px;
   color: $gray-900;
+
+  &:hover {
+    color: $primary;
+  }
 }
 
 .fi::before {
