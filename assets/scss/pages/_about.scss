@@ -1,0 +1,35 @@
+.timeline-item + .timeline-item {
+  position: relative;
+
+  &::before {
+    content: "\e0ef";
+    font-family: "uicons-regular-straight";
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
+    color: $gray-700;
+
+    position: absolute;
+    left: 50%;
+    top: -48px;
+    transform: translate(-50%, 0);
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .timeline-item + .timeline-item::before {
+    content: "\e0f1";
+    top: 50%;
+    left: -24px;
+    transform: translate(0, -50%);
+  }
+
+  .timeline-item:nth-child(4)::before {
+    display: none;
+  }
+}
